@@ -1,1 +1,2 @@
 pip install openai speechrecognition pyttsx3 numpy pyaudio
+sudo apt-get install espeak
