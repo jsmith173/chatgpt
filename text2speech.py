@@ -9,19 +9,16 @@ import os
 # The text that you want to convert to audio 
 mytext1 = "Hello. What is the capital of Hungary?"
 mytext2 = "Hello. What is the maximum of integer numbers 2 and 5"
+mytext3 = "Please turn on the switch"
+mytext4 = "Please turn off the switch"
+mytext5 = "Please turn on the switch labeled left"
+mytext6 = "Please turn off the switch labeled left"
 
 # Language in which you want to convert 
 language = 'en'
 
-# Passing the text and language to the engine, 
-# here we have marked slow=False. Which tells 
-# the module that the converted audio should 
-# have a high speed 
-myobj = gTTS(text=mytext1, lang=language, slow=False) 
+myobj1 = gTTS(text=mytext5, lang=language, slow=True) 
+myobj1.save("turn on the switch left.mp3") 
 
-# Saving the converted audio in a mp3 file named 
-# welcome 
-myobj.save("capitalhungary.mp3") 
-
-# Playing the converted file 
-#os.system("mpg321 welcome.mp3") 
+myobj2 = gTTS(text=mytext6, lang=language, slow=True) 
+myobj2.save("turn off the switch left.mp3") 

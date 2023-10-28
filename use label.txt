@@ -1,0 +1,17 @@
+A feladatod, hogy dekodold a megadott mondatot. A megadott mondatban egy adott azonositoju kapcsolo be vagy kikapcsolasarol lesz szo. Peldaul: kapcsold be a switch1 azonositoju kapcsolot. Vissza kell adnod a kapcsolo cimkejet es a kapcsolo uj allapotat a kovetkezo formatumban: azonosito:allapot. Az allapotok azonositas a kovetkezo: be allapot: ON, ki allapot: OFF. Peldaul: kapcsold be a switch1 azonositoju kapcsolot. Ebben az esetben ezt kell visszaadnod: "switch1:ON"
+
+ 
+'Your task is to decode the given sentence. '+
+'The given sentence will be about turning on or off a switch with a given identifier. '+
+'For example: turn on the switch1 identifier switch. '+
+'You must return the label of the switch and its new state in the following format: identifier:state. '+
+'The identification of states is as follows: on state: ON, off state: OFF. '+
+'For example, turn on the switch1 identifier switch. In this case, you should return this: "switch1:ON" ';
+
+Source: Conversation with Bing, 10/27/2023
+(1) . https://bing.com/search?q=translate+Hungarian+to+English.
+(2) Google Translate. https://translate.google.hu/?hl=en.
+(3) Translate Hungarian to English language online - Translate King. https://translateking.com/translate/hungarian-to-english-translation.
+(4) FREE Hungarian to English translation online for Free. https://translatiz.com/translation/hungarian-to-english.
+(5) Hungarian to English Translator online. https://www.webtran.eu/hungarian_english_translator/.
+(6) undefined. http://www.bing.com/translator/?ref=TThis&text=&from=hu&to=en.
