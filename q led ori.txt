@@ -1,0 +1,23 @@
+import os
+import openai
+
+openai.api_key = os.getenv("OPENAI_API_KEY")
+
+response = openai.ChatCompletion.create(
+  model="gpt-3.5-turbo",
+  messages=[
+    {
+      "role": "system",
+      "content": "The user can give you 4 different commands. Your task is to determine which command you got. If the user says something similar to \"Please turn on the red LED.\" answer with \"1\". If you get \"Turn off the red LED.\" answer with \"2\". If you get \"Turn on the green LED.\" answer with \"3\". If you get \"Turn off the green LED.\", answer with \"4\". If you do not recognized the command, please answer with \"0\" "
+    },
+    {
+      "role": "user",
+      "content": "Assistant, put out the green light!"
+    }
+  ],
+  temperature=1,
+  max_tokens=256,
+  top_p=1,
+  frequency_penalty=0,
+  presence_penalty=0
+)
