@@ -1,4 +1,4 @@
-import os, openai, speech_recognition as sr, pyttsx3
+import os, openai, keyboard, speech_recognition as sr, pyttsx3
 
 class _TTS:
     engine = None
@@ -20,10 +20,11 @@ def listen_for(source):
     print("Listening...")
 
     while True:
-        print("Listening...(1)")
+        print("Waiting... press space to start")
+        keyboard.wait('space')
         audio = r.listen(source)
         try:
-            print("Listening... (2)")
+            print("Processing request...")
             text = r.recognize_google(audio)
             print(f"You said: {text}")
             if not text:
