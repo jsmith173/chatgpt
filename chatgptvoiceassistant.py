@@ -20,8 +20,7 @@ def listen_for(source):
     print("Listening...")
 
     while True:
-        print("Waiting... press space to start")
-        keyboard.wait('space')
+        input("Waiting... press space to start")
         audio = r.listen(source)
         try:
             print("Processing request...")
