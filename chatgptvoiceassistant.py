@@ -5,6 +5,7 @@ class _TTS:
     rate = None
     def __init__(self):
         self.engine = pyttsx3.init()
+        self.engine.setProperty('rate',145)
 
     def start(self,text_):
         self.engine.say(text_)
@@ -17,10 +18,10 @@ voice = engine.getProperty('voices')[1]
 engine.setProperty('voice', voice.id)
 
 def listen_for(source):
-    print("Listening...")
 
     while True:
-        input("Waiting... press space to start")
+        input("Waiting... press Enter to start")
+        print("Listening...")
         audio = r.listen(source)
         try:
             print("Processing request...")
