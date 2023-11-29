@@ -13,12 +13,11 @@ mytext3 = "Please turn on the switch"
 mytext4 = "Please turn off the switch"
 mytext5 = "Please turn on the switch labeled left"
 mytext6 = "Please turn off the switch labeled left"
+mytext7 = "Please press the button labeled forward"
 
 # Language in which you want to convert 
 language = 'en'
 
-myobj1 = gTTS(text=mytext5, lang=language, slow=True) 
-myobj1.save("turn on the switch left.mp3") 
+myobj1 = gTTS(text=mytext7, lang=language, slow=True) 
+myobj1.save("Please press the button labeled forward.mp3") 
 
-myobj2 = gTTS(text=mytext6, lang=language, slow=True) 
-myobj2.save("turn off the switch left.mp3") 
